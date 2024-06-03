@@ -2,439 +2,887 @@
 layout: default
 ---
 
-    <div class="container-fluid ">
-        <div class="kv-site kv-main" tabindex="-1">
-            <content class="kv-page" name="page-home">
-                <div class="kv-page-content ">
-                    <!-- Header section started  -->
-                    <div class="header-section">
-                        <div class="position-relative kv-content">
-                            <div class="kv-fixed-header navigation-position kv-check-scroll kv-content">
-                                <div class="container-fluid navigation check-mobile">
-                                    <header>
-                                        <div class="logo" data-dynamic-navigation-element="logo">
+<div class="container-fluid no-scroll">
+    <div class="kv-site kv-main" tabindex="-1">
+        <content class="kv-page" name="page-home">
+            <div class="kv-page-content">
+                <!-- Header section started  -->
+                <div class="header-section" id="my-home-section" value="true">
+                    <div class="position-relative kv-content">
+                        <div class="kv-fixed-header navigation-position kv-check-scroll kv-content">
+                            <div class="container-fluid navigation check-mobile">
+                                <header class="fixed-header">
+                                    <div class="row">
+                                        <div class="logo col-lg-10" data-dynamic-navigation-element="logo">
                                             <a href="">
-
                                                 <div data-type="logo" data-property="global.logo" id="myHeader"
                                                     class="header-logo-small">
-                                                    <img class="header-logo-image " data-setting="border"
-                                                        src="./images/SIGIL-LOGO.png">
+                                                    <img class="header-logo-image desktop-logo"
+                                                        data-setting="border" src="./images/SIGIL-LOGO.png" />
+                                                    <img class="header-logo-image mobile-logo" data-setting="border"
+                                                        src="./images/mobile-logo.png" />
                                                 </div>
                                             </a>
                                         </div>
-                                    </header>
+
+                                        <div class="col-lg-2 sidebar-button-block text-center my-auto"
+                                            style="cursor: pointer">
+                                            <span class="menu-text" onclick="openSection('sidebar-section')">
+                                                <i class="fa fa-bars"></i><b class="text-sec">Menu</b></span>
+                                        </div>
+                                    </div>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar-section" value="false">
+                    <div class="sidebar-block row mobile-sidebar">
+                        <div class="col-lg-12 text-center mt-3">
+                            <div class="cross-icon">
+                                <span onclick="closeSidebar()">X</span>
+                            </div>
+                            <ul class="list-unstyled sidbar-list">
+                                <li>
+                                    <a onclick="openSection('my-home-section')">Home</a>
+                                </li>
+                                <li>
+                                    <a onclick="openSection('about-us-section')">About us</a>
+                                </li>
+                                <li>
+                                    <a onclick="openSection('how-we-work-section')">How it works</a>
+                                </li>
+                                <li>Product</li>
+                                <li>
+                                    <a onclick="openSection('my-team-detail-section')">Team</a>
+                                </li>
+                                <li>
+                                    <a onclick="openSection('get-in-touch-detail-section')">Get in touch</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <ul class="list-unstyled horizontal-line  d-none  mobile-sidebar-bottom-content">
+                            <li class="d-inline-block">Terms & Cond</li>
+                            <li class="d-inline-block ml-3">Privacy Policy</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- global scintific content -->
+                <section class="main-header-section">
+                    <div class="position-relative sec-div px-5">
+                        <div class="banner-title">
+                            <div class="row">
+                                <div class="d-flex mx-auto">
+                                    <div class="col-lg-6">
+                                        <h2 class="cover-title section-title hide-desktop page-title-sm ml-3"
+                                            data-type="text" tabindex="0"
+                                            style="opacity: 1; transform: translateY(0px)">
+                                            <span class="cstm-fnt">
+                                                <span>Global</span><br /><span>Scientific</span><br /><span>Enterprises</span>
+                                            </span>
+                                        </h2>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img class="aerrow-icon" data-setting="border"
+                                            src="./images/banner-icon.png" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- global scintific content -->
-                    <section class="main-header-section">
-                        <div class="position-relative sec-div">
-                            <div class="kv-content">
-                                <div class="container align-left">
-                                    <div class="row">
-                                        <div class="col-lg-12 mx-auto">
-                                            <div class="col-11 offset-1 w-100">
-                                                <h2 class="cover-title section-title hide-desktop page-title-sm ml-3"
-                                                    data-type="text" tabindex="0"
-                                                    style="opacity: 1; transform: translateY(0px);padding-left:30px;">
-                                                    <span class="cstm-fnt">
-                                                        <b>Global</b><br><b>Scientific</b><br><b>Enterprises</b>
-                                                    </span>
-                                                </h2>
-                                                <p class="cover-description section-description body-md"
-                                                    style="padding-left:30px;" data-type="text" tabindex="0">We are
-                                                    shaping
-                                                    the future <br>with stellar technology for<br>Scientific
-                                                    Evidence Generation and <br>Implementation Science.
-                                                    <span data-prop="description" class="ck-editable-element"
-                                                        data-editable="basic" style="display:none;"></span>
-                                                </p>
-                                                <div class="buttons" style="padding-left:30px; margin-top: 35px; ">
-                                                    <button onclick="redirectToDiv('read-more-section')"
-                                                        class="btn btn-warning read-more-button" type="button">
-                                                        Read more
-                                                    </button>
-                                                </div>
-                                                <br>
-                                                <div class="buttons" style="padding-left:30px;"
-                                                    onclick="redirectToDiv('contactus-section')">
-                                                    <button type="button" class="btn btn-outline-light contact-button ">
-                                                        Contact</button>
-                                                </div>
-                                            </div>
+                <!-- middle content section -->
+                <section class="feliwo76">
+                    <div class="middle-content px-5 mt-5">
+                        <div id="home-page-section-middle" value="true">
+                            <div class="data-software-content " id="about-us-section">
+                                <div class="row">
+                                    <div class="section-text col-lg-8 col-sm-12 ml-5">
+                                        <p class="shapping-description">
+                                            We are shaping the future with stellar technology for
+                                            Scientific Evidence Generation and Implementation
+                                            Science.
+                                        </p>
+                                        <div class="buttons" style="margin-top: 35px">
+                                            <button class="btn btn-warning read-more-button" type="button"
+                                                onclick="openSection('get-in-touch-detail-section')">
+                                                Contact Us
+                                                <img class="aerrow-icon" data-setting="border"
+                                                    src="./images/arrow.png" />
+                                            </button>
                                         </div>
                                     </div>
-
+                                    <div class="col-lg-4 dsc-col"></div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- data software content section -->
-                    <section class="feliwo76">
-                        <div class="middle-content" id="read-more-section">
-                            <div class=" data-software-content mb-5 ">
-                                <div class="row">
-                                    <div class="section-text col-8 offset-2 text-center">
-                                        <h2 class="section-title section-title-md">We are a data
-                                            software house</h2>
-                                        <p class="section-subtitle overline title-xs">We thrive to
-                                            design and develop stellar technologies to raise scientific data
-                                            processing pipelines and implementation science workflows to
-                                            unprecedented quality.</p>
+                                <div class="row software-house-section">
+                                    <div class="section-text col-lg-6">
+                                        <p class="shapping-description">
+                                            We are a data<br />
+                                            software house
+                                        </p>
+                                    </div>
+                                    <div class="section-text col-lg-5">
+                                        <p class="data-software-desc">
+                                            We thrive to design and develop stellar technologies
+                                            to raise scientific data processing pipelines and
+                                            implementation science workflows to unprecedented
+                                            quality.
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-10 offset-1 text-center">
+
+                            </div>
+                            <div class="work-section" id="how-we-work-section">
+                                <div class="row mobile-sofware-cards">
+                                    <div class="col-lg-12 text-center">
                                         <div class="list-control">
                                             <div class="row">
-                                                <div class="col-6 col-md-4 feature-card one-column-left text-center">
-                                                    <div class="icon-size icon ">
+                                                <div class="col-md-3 col-sm-12 first-feature-card feature-card">
+                                                    <div class="icon-size icon">
                                                         <div class="feature-image" data-type="icon"
                                                             data-property="icon">
-                                                            <i class="fa fa-industry"> </i>
+                                                            <img class="header-logo-image logo-for-desktop"
+                                                                data-setting="border"
+                                                                src="./images/softaware-black-icons-logo.png" />
+                                                            <img class="header-logo-image logo-for-mobile d-none"
+                                                                data-setting="border"
+                                                                src="./images/software-icons-logo.png" />
                                                         </div>
                                                     </div>
                                                     <h3 class="title-sm" data-type="text" tabindex="0">
-                                                        Automated<br>by design<span data-prop="title"
-                                                            class="ck-editable-element"></span>
+                                                        Automated by design
                                                     </h3>
                                                     <p class="body-sm" data-type="text" tabindex="0">
-                                                        Resilient processes that do not rely
-                                                        on manual steps.</p>
-                                                </div>
-                                                <div class="col-6 col-md-4 feature-card one-column-left text-center">
-                                                    <div class="icon-size icon ">
-                                                        <div class="feature-image" data-type="icon"
-                                                            data-property="icon">
-                                                            <i class="fa fa-star"> </i>
-                                                        </div>
-                                                    </div>
-                                                    <h3 class="title-sm">
-                                                        Self-testing<br>by design
-                                                    </h3>
-                                                    <p class="body-sm">
-                                                        Bug-free code that is brilliantly
-                                                        simple and self-maintainable.
+                                                        Resilient processes that do not rely on manual
+                                                        steps.
                                                     </p>
                                                 </div>
-                                                <div class="col-6 col-md-4 feature-card one-column-left text-center">
-                                                    <div class="icon-size icon ">
+                                                <div class="col-md-3 col-sm-12 feature-card second-feature-card">
+                                                    <div class="icon-size icon">
                                                         <div class="feature-image" data-type="icon"
                                                             data-property="icon">
-                                                            <i class="fa fa-shield"> </i>
+                                                            <img class="header-logo-image" data-setting="border"
+                                                                src="./images/software-icons-logo.png" />
                                                         </div>
                                                     </div>
-                                                    <h3 class="title-sm">
-                                                        Secure<br>by design
-                                                    </h3>
+                                                    <h3 class="title-sm">Self-testing by design</h3>
+                                                    <p class="body-sm">
+                                                        Bug-free code that is brilliantly simple and
+                                                        self-maintainable.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-12 feature-card third-feature-card">
+                                                    <div class="icon-size icon">
+                                                        <div class="feature-image" data-type="icon"
+                                                            data-property="icon">
+                                                            <img class="header-logo-image" data-setting="border"
+                                                                src="./images/software-icons-logo.png" />
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="title-sm">Secure by design</h3>
                                                     <p class="body-sm" data-type="text" tabindex="0">
-                                                        Implementation of software patterns
-                                                        that expose no risk.</p>
+                                                        Implementation of software patterns that expose
+                                                        no risk.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row work-section-details">
+                                    <div class="work-section-text col-lg-4">
+                                        <h2>How we work</h2>
+                                    </div>
+                                    <div class="col-lg-8 mobile-work-section-block">
+                                        <div class="work-section-list">
+                                            <div class="row" data-type="list">
+                                                <div class="orange-line">
+                                                    <div class="number">
+                                                        01
+                                                        <div class="text-description">
+                                                            <span class="title">
+                                                                Deep requirements understanding
+                                                            </span>
+                                                            <p class="description">
+                                                                With strong medical and scientific
+                                                                background and a sharp analytic eye, we
+                                                                understand health data projects to the
+                                                                finest of details.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orange-line">
+                                                    <div class="number">
+                                                        02
+                                                        <div class="text-description">
+                                                            <span class="title">
+                                                                Fast and openiteration cycles
+                                                            </span>
+                                                            <p class="description">
+                                                                Aggressive approach to development,
+                                                                prioritizing complete process transparency
+                                                                and fast iterations to converge ideas and
+                                                                requirements early.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orange-line">
+                                                    <div class="number">
+                                                        03
+                                                        <div class="text-description">
+                                                            <span class="title">
+                                                                Battle-test implementation
+                                                            </span>
+                                                            <p class="description">
+                                                                Deployment to sandboxed real-world
+                                                                environments and deep scrutiny of software
+                                                                performance under pressure scenarios.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orange-line">
+                                                    <div class="number">
+                                                        04
+                                                        <div class="text-description">
+                                                            <span class="title">
+                                                                Inspection & improvement
+                                                            </span>
+                                                            <p class="description">
+                                                                Deployment to sandboxed real-world
+                                                                environments and deep scrutiny of software
+                                                                performance under pressure scenarios.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="orange-line">
+                                                    <div class="number">
+                                                        05
+                                                        <div class="text-description">
+                                                            <span class="title">
+                                                                Deliver Robust Technology
+                                                            </span>
+                                                            <p class="description">
+                                                                Adoption by ourselves and by our partners to
+                                                                supercharge scientific data processes,
+                                                                maximizing operational efficiency, and
+                                                                minimizing scaling cost.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12 vero-image-section">
+                                        <img class="header-logo-image" data-setting="border"
+                                            src="./images/vero-text.png" />
+
+                                    </div>
+                                </div>
                             </div>
-                            <div class="work-section  mb-5">
+                            <div class="latest-news-section" id="latest-news-block-section">
                                 <div class="row">
-                                    <div class="section-text col-8 offset-2 text-center">
-                                        <h2 class="section-title section-title-md">How we work
+                                    <div class="col-8  heading-sec">
+                                        <h2 class="latest-text">
+                                            Latest news
                                         </h2>
                                     </div>
-                                </div>
-                                <div class="row mb-5">
-                                    <div class="col-8 offset-2">
-                                        <div class="kv-ee-timeline">
-                                            <div class="kv-ee-list-control">
-                                                <div class="kv-ee-row" data-type="list">
-                                                    <div class="kv-ee-col-12 kv-ee-left kv-ee-element">
-                                                        <div class="kv-ee-content">
-                                                            <h3 class="kv-ee-title--md" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">Deep
-                                                                requirements understanding<span data-prop="title"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></h3>
-                                                            <p class="kv-ee-description" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">With
-                                                                strong
-                                                                medical and scientific background and a sharp analytic
-                                                                eye,
-                                                                we understand health data projects to the finest of
-                                                                details.<span data-prop="description"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></p>
+                                    <div class="col-4  corousel-controller">
+                                        <a class="carousel-control-prev" href="#myCarousel" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#myCarousel" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="col-lg-12 text-center">
+                                        <div class="list-control-news-section carousel slide " id="myCarousel">
+                                            <ol class="carousel-indicators d-none">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                                    class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+                                            <!-- corousel sections  -->
+                                            <div class="carousel-inner ">
+                                                <div class="carousel-item active  carousel-item-1 ">
+                                                    <div class="d-flex justify-content-between">
+
+
+                                                        <div class=" news-section-cards first-section-card ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-1.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-2.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-3.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="kv-ee-col-12 kv-ee-right kv-ee-element second-block">
-                                                        <div class="kv-ee-content">
-                                                            <h3 class="kv-ee-title--md" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">Fast and
-                                                                open<br>iteration cycles<span data-prop="title"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></h3>
-                                                            <p class="kv-ee-description" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">
-                                                                Aggressive
-                                                                approach to development, prioritizing complete process
-                                                                transparency and fast iterations to converge ideas and
-                                                                requirements early.<span data-prop="description"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></p>
+                                                </div>
+                                                <div class="carousel-item  ">
+                                                    <div class="d-flex justify-content-between">
+
+
+                                                        <div class=" news-section-cards first-section-card ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-1.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-2.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-3.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="kv-ee-col-12 kv-ee-left kv-ee-element">
-                                                        <div class="kv-ee-content">
-                                                            <h3 class="kv-ee-title--md" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">
-                                                                Battle-test
-                                                                implementation<span data-prop="title"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></h3>
-                                                            <p class="kv-ee-description" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">
-                                                                Deployment
-                                                                to sandboxed real-world environments and deep scrutiny
-                                                                of
-                                                                software performance under pressure scenarios.<span
-                                                                    data-prop="description" class="ck-editable-element"
-                                                                    data-editable="basic" style="display:none;"></span>
-                                                            </p>
+                                                </div>
+                                                <div class="carousel-item  ">
+                                                    <div class="d-flex justify-content-between">
+
+
+                                                        <div class=" news-section-cards first-section-card ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-1.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="kv-ee-col-12 kv-ee-right kv-ee-element">
-                                                        <div class="kv-ee-content">
-                                                            <h3 class="kv-ee-title--md" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">
-                                                                Inspection
-                                                                &amp; improvement<span data-prop="title"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></h3>
-                                                            <p class="kv-ee-description" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">Report
-                                                                test
-                                                                and performance results, identify code improvement
-                                                                opportunities, then repeat until convergence.<span
-                                                                    data-prop="description" class="ck-editable-element"
-                                                                    data-editable="basic" style="display:none;"></span>
-                                                            </p>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-2.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="kv-ee-col-12 kv-ee-left kv-ee-element">
-                                                        <div class="kv-ee-content">
-                                                            <h3 class="kv-ee-title--md" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">Deliver
-                                                                Robust Technology<br><span data-prop="title"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></h3>
-                                                            <p class="kv-ee-description" data-type="text" tabindex="0"
-                                                                style="opacity: 1; transform: translateY(0px);">Adoption
-                                                                by
-                                                                ourselves and by our partners to supercharge scientific
-                                                                data
-                                                                processes, maximizing operational efficiency, and
-                                                                minimizing
-                                                                scaling cost.&nbsp;&nbsp;<span data-prop="description"
-                                                                    class="ck-editable-element" data-editable="basic"
-                                                                    style="display:none;"></span></p>
+                                                        <div class=" news-section-cards  ">
+                                                            <div class=" latest-news-cards-section ">
+                                                                <div class="latest-image" data-type="icon"
+                                                                    data-property="icon">
+                                                                    <img class="latest-imagesss"
+                                                                        data-setting="border"
+                                                                        src="./images/latest-news-3.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class=" lnews-details-section">
+
+                                                                <h3>
+                                                                    Rigorous scientific writing of medical content
+                                                                </h3>
+                                                                <p>
+                                                                    Rigorous scientific writing of medical content
+                                                                    for
+                                                                    communication.
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <!-- corousel sectiomn -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="know-more-content " id="contactus-section">
-                                <div class="know-content">
-                                    <div class="row">
-                                        <div class="section-text col-8 offset-2 text-left">
-                                            <h2 class="section-title section-title-md">Would you like to know more?
+                        </div>
+                        <div id="my-team-detail-section" value="false">
+                            <div class="row my-team-page">
+                                <div class="col-lg-12">
+                                    <div class="row description-section">
+                                        <div class="col-lg-3 offset-1 ml-5">
+                                            <h2>
+                                                Our team<br />
+                                                <span class="orange-line"></span>
                                             </h2>
-                                            <p class="section-subtitle overline title-xs">Get in touch with us to know
-                                                more
-                                                about our work, our projects and our methods.
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <p>
+                                                We are a dedicated team of medical doctors,
+                                                engineers, data scientists and academics on a
+                                                mission to improve population health and
+                                                sustainability of healthcare systems.
                                             </p>
-                                            <p class="section-subtitle overline title-xs">We are looking to partner with
-                                                CROs, Academia, Healthcare Institutions, Industry and other players that
-                                                are
-                                                interested in achieving operational excellence and high quality evidence
-                                                generation, in RWE and Implementation Science domains.
-                                                .</p>
-
                                         </div>
+                                        <div class="col-lg-3"></div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-8 offset-2 offset-1 text-center">
-                                            <div class="form-section ">
-                                                <form>
+                                    <div class="row team-detail-section">
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
 
-                                                    <div class="row">
-                                                        <div class="col-6 text-left">
-                                                            <div class="form-group fieldEmail-container ">
-                                                                <label>Email</label>
-                                                                <input class="form-control" id="fieldEmail" type="text"
-                                                                    placeholder="" required data-namelabel="Email"
-                                                                    aria-invalid="false" aria-label="Email">
-                                                            </div>
-                                                            <div class="form-group fieldSubject-container ">
-                                                                <label>Subject</label>
-                                                                <input class="form-control" id="fieldSubject"
-                                                                    type="text" placeholder="" required
-                                                                    data-namelabel="Subject" aria-invalid="false"
-                                                                    aria-label="Subject">
-                                                                <div class="error-container"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6 text-left mt-2">
-                                                            <div class="fieldMessage-container">
-                                                                <label>Message</label>
-                                                                <textarea class="form-control" rows="4"
-                                                                    id="fieldMessage" placeholder=""
-                                                                    data-namelabel="Message" required
-                                                                    aria-label="Message"></textarea>
-                                                                <div class="error-container"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-4 text-left">
-                                                            <div class="fieldSubscribe-container">
-                                                                <label>
-                                                                    <input type="checkbox" id="fieldSubscribe"
-                                                                        value="false" required
-                                                                        data-namelabel="By checking this box and submitting your information, you are granting permission to email you. You may unsubscribe at any time."
-                                                                        aria-label="By checking this box and submitting your information, you are granting permission to email you. You may unsubscribe at any time.">
-                                                                    By checking this box and submitting your
-                                                                    information, you
-                                                                    are granting permission to email you. You may
-                                                                    unsubscribe at
-                                                                    any time.
-                                                                </label>
-                                                            </div>
-                                                            <div class="buttons">
-                                                                <button class="btn btn-warning read-more-button"
-                                                                    type="submit">
-                                                                    Send Message </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 member-card">
+                                            <div class="row">
+                                                <img class="member-profile-image" data-setting="border"
+                                                    src="./images/team-member.png" />
+                                            </div>
+                                            <div class="row m-auto mb-description p-3 pb-0">
+                                                <h2 class="team-member-name mt-2 mb-0">
+                                                    Tiago Taveira-Gomes
+                                                </h2>
+                                                <p class="team-member-qlf">MD ME MSc Phd</p>
+                                                <p class="team-member-position">Founder $ CEO</p>
+                                                <span class="plus-icon w-100">
+                                                    <b>+</b>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </section>
-
-                    <!-- footer content section -->
-                    <section>
-                        <div class="footer-content-block">
-                            <div class="footer-content">
-                                <div class="row subscribe-block">
-                                    <div class="col-10 offset-1 ">
-                                        <div class="row">
-                                            <div class="col-6 text-center   subscribe-text">
-                                                <h3>Subscribe</h3>
-                                            </div>
-                                            <div class="col-5 text-left form-section">
-                                                <p>Sign up to our newsletter and stay up to date
-                                                </p>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-8">
-                                                            <input class="form-control" id="myInput" type="text"
-                                                                placeholder="Enter your e-mail address" required
+                        <div id="get-in-touch-detail-section" value="false">
+                            <div class="row get-in-touch-page">
+                                <div class="col-lg-12">
+                                    <div class="row description-section">
+                                        <div class="col-lg-3 offset-1 ml-5 get-text">
+                                            <h2>
+                                                Get in <br />
+                                                <span class="orange-line"></span>touch
+                                            </h2>
+                                        </div>
+                                        <div class="col-lg-5 get-touch-desc">
+                                            <p>
+                                                We are looking to partner with CROs, Academia,
+                                                Healthcare Institutions, Industry and other players
+                                                that are interested in achieving operational
+                                                excellence and high quality evidence generation, in
+                                                RWE and Implementation Science domains.
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-3"></div>
+                                    </div>
+                                    <div class="contact-form row">
+                                        <div class="col-lg-3 offset-1 ml-5"></div>
+                                        <div class="col-lg-5">
+                                            <form action="https://formspree.io/f/moqgbldy" method="POST">
+                                                <div class="row">
+                                                    <div class="col-lg-12 text-left">
+                                                        <div class="form-group fieldEmail-container">
+                                                            <label>Email</label>
+                                                            <input class="form-control" id="myContactsInput"
+                                                                type="email" id="mail" name="user_mail"
+                                                                placeholder="youremail123@gmail.com" required
                                                                 data-namelabel="Email" aria-invalid="false"
-                                                                aria-label="Email">
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div class="buttons">
-                                                                <button class="btn btn-warning read-more-button"
-                                                                    type="submit">
-                                                                    Subscribe </button>
-                                                            </div>
+                                                                aria-label="Email" />
                                                         </div>
                                                     </div>
-                                                </form>
-                                                <p class="desc-text"> By submitting your information, you are granting
-                                                    us permission to
-                                                    email you. You may unsubscribe at any time.
+                                                    <div class="col-lg-12 text-left">
+                                                        <div class="form-group fieldSubject-container">
+                                                            <label>Subject</label>
+                                                            <input class="form-control" id="myContactsInput"
+                                                                name="user_subject" type="text"
+                                                                placeholder="Your subject" required
+                                                                data-namelabel="Subject" aria-invalid="false"
+                                                                aria-label="Subject" />
+                                                            <div class="error-container"></div>
+                                                        </div>
+                                                    </div>
 
-                                                </p>
-
-                                            </div>
-                                            <div class="col-1">
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-8 offset-2 information-block">
-                                        <div class="row">
-
-                                            <div class="col-4 text-left">
-                                                <h3>Address</h3>
-                                                <p>DMCC Business Centre
-                                                    Dubai, 4076, AE</p>
-                                                <p><a class="opaque body--sm" href="mailto:info@sigil.ae"
-                                                        data-type="email">info@sigil.ae</a>
-                                                </p>
-                                            </div>
-                                            <div class="col-4 text-left">
-                                                <h3>
-                                                    Follow us
-                                                </h3>
-                                                <p>
-                                                    <a href="https://www.linkedin.com/company/sigil-scientific-enterprises"
-                                                        target="_blank" class="social-link body-text opaque body--sm"
-                                                        aria-label="Social link LinkedIn"> <i
-                                                            class="fa fa-linkedin-square"></i> <span
-                                                            class="social-provider">LinkedIn</span></a>
-                                                </p>
-                                            </div>
-                                            <div class="col-4 text-left">
-                                                <h3>
-                                                    About us
-                                                </h3>
-                                                <p>Stellar technology for Scientific Evidence Generation and
-                                                    Implementation Science</p>
-                                            </div>
+                                                    <div class="col-lg-12 text-left">
+                                                        <div class="fieldMessage-container form-group">
+                                                            <label>Message</label>
+                                                            <textarea class="form-control" rows="4"
+                                                                id="myContactsInput" name="user_message"
+                                                                placeholder="Your message" data-namelabel="Message"
+                                                                required aria-label="Message"></textarea>
+                                                            <div class="error-container"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 text-left">
+                                                        <div class="fieldSubscribe-container form-group">
+                                                            <label class="checkbox-label" id="cb-lables"
+                                                                for="myCheckbox">
+                                                                By checking this box and submitting your
+                                                                information, you are granting permission to
+                                                                email you. You may unsubscribe at any time.
+                                                            </label>
+                                                            <input type="checkbox" value="false" id="myCheckbox"
+                                                                required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons col-lg-12 mt-5 text-center">
+                                                        <button class="btn btn-warning read-more-button"
+                                                            type="submit">
+                                                            Contact us<img class="aerrow-icon" data-setting="border"
+                                                                src="./images/arrow.png" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </section>
+                        <div class="subscribe-email-content row">
+                            <div class="col-lg-4 col-sm-12 side-text">
+                                <h2>
+                                    Sign up to our newsletter<br />
+                                    and stay up to date
+                                </h2>
+                            </div>
+                            <div class="col-lg-5 col-sm-12 offset-2 semail-input-box">
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <input class="form-control" id="myInput" type="text"
+                                            placeholder="Enter your e-mail address" required data-namelabel="Email"
+                                            aria-invalid="false" aria-describedby="basic-addon2"
+                                            aria-label="Email" />
+                                        <div class="input-group-append">
+                                            <button class="btn btn-warning read-more-button input-group-text"
+                                                id="basic-addon2" type="submit">
+                                                Subscribe
+                                                <img class="aerrow-icon" data-setting="border"
+                                                    src="./images/arrow.png" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                </div>
-            </content>
-            <script>window._page = { "mainPage": true, "title": "Home", "uriPath": "index" };</script>
-        </div>
+                <!-- footer content section -->
+                <section>
+                    <div class="footer-content-block mobile-footer">
+                        <div class="footer-content">
+                            <div class="col-lg-12 information-block">
+                                <div class="row">
+                                    <div class="col-lg-3 offset-1 text-left stellar-info">
+                                        <p class="w-75">
+                                            Stellar technology for Scientific Evidence Generation
+                                            and Implementation Science
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-3 offset-1 text-left address-section">
+                                        <h3 class="w-75">ADDRESS</h3>
+                                        <p class="w-75">DMCC Business Centre Dubai, 4076, AE</p>
+                                    </div>
+                                    <div class="col-lg-3 offset-1 text-left email-section">
+                                        <h3 class="w-75">EMAIL</h3>
+                                        <p class="w-75">info@sigil.ae</p>
+                                    </div>
+                                </div>
+                                <div class="row footer-links">
+                                    <div class="col-lg-3 col-sm-12 offset-1 text-left linkdin-link">
+                                        <span>
+                                            <a href="https://www.linkedin.com/company/sigil-scientific-enterprises"
+                                                target="_blank" class="social-link body-text opaque body--sm"
+                                                aria-label="Social link LinkedIn">
+                                                <i class="fa fa-linkedin-square"></i>
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-6 offset-1 mobile-footer-links">
+                                        <ul
+                                            class="list-unstyled horizontal-line d-flex justify-content-between two-column-list">
+                                            <li class="d-inline-block mr-3">
+                                                <a onclick="openSection('my-home-section')">Home</a>
+                                            </li>
+                                            <li class="d-inline-block mr-3">
+                                                <a onclick="openSection('about-us-section')">About us</a>
+                                            </li>
+                                            <li class="d-inline-block mr-3">
+                                                <a onclick="openSection('how-we-work-section')">How it works</a>
+                                            </li>
+                                            <li class="d-inline-block mr-3">Product</li>
+                                            <li class="d-inline-block mr-3">
+                                                <a onclick="openSection('my-team-detail-section')">Team</a>
+                                            </li>
+                                            <li class="d-inline-block mr-3">
+                                                <a onclick="openSection('get-in-touch-detail-section')">Get in
+                                                    touch</a>
+                                            </li>
+                                        </ul>
+                                        <div class="col-lg-3 d-none mobile-terms-links">
+                                            <ul
+                                                class="list-unstyled horizontal-line d-flex justify-content-between mobile-two-column-list">
+                                                <li class="d-inline-block">Terms & Conds</li>
+                                                <li class="d-inline-block">Privacy Policy</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row footer-copyright-section">
+                                    <div class="col-lg-3 ml-3 text-center">
+                                        <span> Copyright © 2023 SIGIL </span>
+                                    </div>
+                                    <div class="col-lg-3 offset-1 terms-links disble-terms-links">
+                                        <ul
+                                            class="list-unstyled horizontal-line d-flex justify-content-between mobile-two-column-list">
+                                            <li class="d-inline-block">Terms & Conds</li>
+                                            <li class="d-inline-block">Privacy Policy</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </content>
+        <script>
+            window._page = { mainPage: true, title: "Home", uriPath: "index" };
+        </script>
     </div>
+</div>
 
-    <script>
-        window.onscroll = function () { stickyHeader() };
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function stickyHeader() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-
-        function redirectToDiv(divId) {
-            var element = document.getElementById(divId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
-    </script>
+<script src="js/myfunctions.js"></script>
