@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: "Rubik";
     padding: 0;
-    background-image: url("./images/full-page-banner.png");
+    background-image: url("images/full-page-banner.png");
     height: calc(100vh);
     background-size: cover;
     background-position: center;
